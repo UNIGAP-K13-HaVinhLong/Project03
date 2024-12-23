@@ -66,13 +66,13 @@ try:
     print(f"Đạo diễn có nhiều bộ phim nhất: {mvp_director} ({director_counts.max()})")
     print(f"Diễn viên có nhiều phim nhất: {mvp_cast} ({actor_counts.max()})")
 except Exception as e:
-    print(f"Error with Task 6: {e}")
+    print(f"Lỗi Task 6: {e}")
 
 # Task 7: Thôngs kê số lượng phim theo từng thể
 try:
     list_theloai = data['genres'].str.split('|').explode()
     dem_theloai = list_theloai.value_counts()
-    print("Task 7: Thống kê số lượng phim theo từng thể lọa:")
+    print("Task 7: Thống kê số lượng phim theo từng thể lọai:")
     print(dem_theloai)
 except Exception as e:
-    print(f"Loi Task 7: {e}")s
+    print(f"Lỗi Task 7: {e}")s
